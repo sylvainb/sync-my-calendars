@@ -1,0 +1,30 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
+###############################################################################
+#### BLUEMIND SERVICE
+###############################################################################
+
+BLUEMIND = {
+    'ACTIVE': True,
+    'SOAP_URL': 'https://host/soap/proxy?wsdl',
+    'USERNAME': 'my-username',
+    'PASSWORD': 'xxxxxxxxxx',  # password or API KEY
+    'ORIGIN': 'Get SOAP Calendar Python Script',
+    'LOCAL_DIRECTORY': '/tmp',
+    'ICS_FILENAME': 'bluemind.ics'
+}
+
+###############################################################################
+#### FTP BACKEND
+###############################################################################
+
+FTP = {
+    'ACTIVE': True,
+    'HOST': 'www.host.com',
+    'PORT': 8094,
+    'USERNAME': 'my-username',
+    'PASSWORD': 'xxxxxxxxxxx',
+    'DIRECTORY': '/'
+}

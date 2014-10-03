@@ -52,3 +52,9 @@ docs/_build/
 
 # PyBuilder
 target/
+
+/bin/
+
+/include/
+
+/src/sync_my_calendars/config.py
