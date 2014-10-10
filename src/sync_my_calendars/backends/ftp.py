@@ -25,11 +25,11 @@ def send_events():
         )
         upload_file = open(file_path, 'r')
         ftp.storlines(
-            'STOR {}'.format(BLUEMIND['ICS_FILENAME']),
+            'STOR {0}'.format(BLUEMIND['ICS_FILENAME']),
             upload_file
         )
         #ftp.storbinary(
-        #    'STOR {}'.format(BLUEMIND['ICS_FILENAME']),
+        #    'STOR {0}'.format(BLUEMIND['ICS_FILENAME']),
         #    upload_file
         #)
         upload_file.close()

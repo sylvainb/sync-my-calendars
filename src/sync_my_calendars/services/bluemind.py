@@ -35,7 +35,7 @@ def get_events():
     )
 
     # Export the iCalendar (until the end of the next year)
-    date_max = '{}-12-31'.format(datetime.today().year + 1)
+    date_max = '{0}-12-31'.format(datetime.today().year + 1)
     icalendar = client.service.exportICS(
         accesstoken,
         datetime.strptime(date_max, '%Y-%m-%d')
