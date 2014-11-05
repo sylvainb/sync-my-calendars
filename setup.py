@@ -36,6 +36,7 @@ setup(name='sync-my-calendars',
           'setuptools',
           # -*- Extra requirements: -*-
           'suds',
+          'icalendar',
       ],
       entry_points={
       }

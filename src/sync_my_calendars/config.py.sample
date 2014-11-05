@@ -6,6 +6,17 @@
 #### BLUEMIND SERVICE
 ###############################################################################
 
+"""
+# Example for the EVENT_FILTER config
+def event_filter(event):
+    summary = event.get('summary')
+
+    if summary.startswith('PERSO:'):
+        return False
+
+    return True
+"""
+
 BLUEMIND = {
     'ACTIVE': True,
     'SOAP_URL': 'https://host/soap/proxy?wsdl',
@@ -13,7 +24,11 @@ BLUEMIND = {
     'PASSWORD': 'xxxxxxxxxx',  # password or API KEY
     'ORIGIN': 'Get SOAP Calendar Python Script',
     'LOCAL_DIRECTORY': '/tmp',
-    'ICS_FILENAME': 'bluemind.ics'
+    'ICS_FILENAME': 'bluemind.ics',
+    # EVENT_FILTER: a function which take an icalendar Event object as
+    # parameter and return True if the event must be include
+    # See http://icalendar.readthedocs.org/
+    'EVENT_FILTER': None
 }
 
 ###############################################################################
