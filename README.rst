@@ -10,8 +10,8 @@ Overview
 
 Goals :
 
-    * Get events from Bluemind and Wunderlist and store them as ical calendar files.
-    * Send ical files to an FTP server or Dropbox.
+    * Get events from Bluemind and store them as ical calendar files.
+    * Send ical files to an FTP server.
 
 System requirements
 -------------------
