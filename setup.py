@@ -7,8 +7,8 @@ from setuptools import setup, find_packages
 version = '1.0dev'
 
 description = \
-    "Get events from Bluemind and Wunderlist and store them as ical " \
-    "calendar files. Send ical files to an FTP server or Dropbox."
+    "Get events from Bluemind and store them as ical " \
+    "calendar files. Send ical files to an FTP server."
 long_description = open("README.rst").read() + "\n" \
     + open(os.path.join("docs", "HISTORY.rst")).read()
 
@@ -23,7 +23,7 @@ setup(name='sync-my-calendars',
           "Programming Language :: Python",
           "Topic :: Software Development :: Libraries :: Python Modules",
       ],
-      keywords='python calendar bluemind wunderlist',
+      keywords='python calendar bluemind',
       author='Sylvain Boureliou [sylvainb]',
       author_email='sylvain.boureliou@gmail.com',
       url='https://github.com/sylvainb/sync-my-calendars',
